@@ -1,0 +1,78 @@
+
+
+body{
+    color: #fff;
+}
+
+.choice-container{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 1.5rem;
+    background-color: rgb(29,53,87);
+    font-size:3rem;
+   
+}
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.2rem 1rem 0 rgb(29,53,87);
+    transform: scale(1.001);
+    transform: transform 100ms;
+}
+
+.choice-prefix{
+    padding: 2px;
+    color: white;
+}
+
+.choice-text{
+    padding: 1rem;
+    width: 100%;
+}
+
+.correct{
+    background-color: rgb(13, 192, 28);
+}
+.incorrect{
+    background-color: rgb(217,4,41)
+}
+
+
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix{
+    text-align: center;
+    font-size: 45px;
+}
+
+.hud-main-text{
+text-align: center;
+}
+
+#progressBar{
+    width: 20rem;
+    height: 3rem;
+    border: solid 3px rgb(3, 146, 10);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull{
+    height: 100%;
+    background-color:  rgb(13, 192, 28);
+    width: 0%;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .choice-container{
+        min-width: 100%;
+    }
+}
